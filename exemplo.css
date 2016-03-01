@@ -1,0 +1,28 @@
+div{
+width:500px;
+height:500px;
+background:red;
+border-radius:25px 25px 25px 300px;
+
+
+box-shadow: 100px 100px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+text-align: center;
+}
+
+div #card{
+width:100px;
+height:100px;
+transition: 2s;
+
+transition-timing-function: linear;
+
+}
+
+div #card:hover{
+width:500px;
+height:500px;
+border-radius:25px 25px 25px 300px;
+transform:rotate(30deg);
+
+
+}
