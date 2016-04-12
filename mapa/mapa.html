@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+                <meta charset="UTF-8">
+        
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+        <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+    </head>
+    <body>
+     <div id="map" style="position: relative;background-color: red;width:50%;height:500px">iii
+     </div>   
+        
+      
+        
+        
+   <script>
+            var mapa=L.map('map');
+          
+            var longlat=[-20.278380,-40.3027];
+            
+            mapa.setView(longlat,15);
+            
+            var camada= L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png');
+            
+           camada.addTo(mapa);
+           
+           var marcador=L.marker(longlat,{draggable:true,clickable:true});
+           marcador.addTo(mapa);
+           
+           
+
+
+var quadrilatlng =[
+	    [-20.281,-40.299],//esquerda superior
+            [-20.286,-40.299],// inferior direito
+            [-20.286,-40.294],//direita inferior
+            [-20.281,-40.294]// inferior esquerdo
+   
+];
+			
+			
+var quadrado = L.polygon(quadrilatlng,'blue');
+quadrado.addTo(mapa);
+
+
+
+mapa.on('moveend', function(e) {
+    
+    mapa.setView(mapa.getCenter());
+marcador.setLatLng(mapa.getCenter());
+
+    
+}); 
+
+
+
+marcador.on('dragend',function(e)
+{
+   
+var posicao=marcador.getLatLng();
+   
+var popup = L.popup().setContent("<img width=50 height=50 src='casa.jpg'> </img>");
+;
+ 
+ if ((posicao.lat<-20.281)&&(posicao.lat>-20.286) && (posicao.lng<-40.294) && (posicao.lng>-40.299) )
+ {
+        
+   quadrado.bindPopup(popup).openPopup() ;       
+     
+ }
+
+ 
+}
+        );
+        </script>
+        
+        
+    </body>
+</html>
+
