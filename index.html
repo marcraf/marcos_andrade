@@ -1,10 +1,29 @@
 <!DOCKTYE>
+
 <html>
-<HEAD>
+        
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <script src="calculadora.js"></script>
     <script src="nota.js"></script>
     <script src="data.js"></script>
-    
+     <style>
+span.bola {background: cadetblue; border-radius: 0.8em; -moz-border-radius: 0.8em;  -webkit-border-radius: 0.8em;  color: #ffffff;  display: inline-block;
+  font-weight: bold;line-height: 1.6em;  margin-right: 15px;  text-align: center;  width: 1.6em;
+-webkit-box-shadow: 7px 1px 5px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    7px 1px 5px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         7px 1px 5px 0px rgba(50, 50, 50, 0.75);
+position: relative; 
+margin-left:40px;
+}
+.camada{margin-left:20px; top: -150px;margin-top: 140px; cursor:pointer; width:100px; height:100px; background-color: beige;position:relative;float:left; text-align: center; margin-right: 40px ;
+}
+
+.camada1{margin-left:20px;top: -190px;margin-top: 200px; cursor:pointer; width:100px; height:80px;position:relative;float:left; text-align: center; margin-right: 40px ;
+}
+.txt    {width: 100px;height:55px }
+
+</style>
   </HEAD>
   
   
@@ -22,45 +41,123 @@
 
 <h1>Respostas Exercicios HTML</h1>
 
-<ol type="1">
+<ol type="1" style="background-color: beige">
 <li>(F) JavaScript é uma linguagem que pode ser ao mesmo tempo interpretada e
 compilada. </li>
-<li>(V) A linguagem JavaScript possui atribuição dinâmica de tipos a uma variável, o que
-significa que essa variável pode receber valores de diversos tipos durante o seu uso
+<li>(V) A linguagem JavaScript possui atribuição dinâmica de tipos a uma variavel, o que
+significa que essa variavel pode receber valores de diversos tipos durante o seu uso
 em um script. </li>
-<li>(V) É possível incluir mais de um script ou mais de uma biblioteca de scripts em uma
-mesma página HTML, bastando para isso inserir diferentes tags 'script' fazendo,
-cada uma, referência aos arquivos externos dos scripts. </li>
+<li>(V) È possível incluir mais de um script ou mais de uma biblioteca de scripts em uma
+mesma pagina HTML, bastando para isso inserir diferentes tags 'script' fazendo,
+cada uma, referencia aos arquivos externos dos scripts. </li>
 
-<li>(V) JavaScript é suportada e está presente em todos os navegadores existentes no
+<li>(V) JavaScript não suportada e esta presente em todos os navegadores existentes no
 mercado.</li>
 
 </ol>
 
 
-<form action="demo_form.asp">
+<div class="camada1" >
+    <h1><span class="bola">1</span></h1>
+<div class="camada" > 
+    <div class="txt" onclick="window.location.href='curriculum.html'">Exercicio Curriculum </div>
+    <img onclick="window.location.href='curriculum.html'" src="img/curriuum.png" width="100" height="100"></img>
+    </div> </div>
 
-    <input type="button" value="Exercicio [2] calculadora " onclick="calculadora(prompt('',''),prompt('',''));"/></br>
-    
-    <input type="button" value="Exercicio [3] notas aluno 4 argumentos " onclick="Nota(1,2,3,4);"/></br>
-    <input type="button" value="Exercicio [3] notas aluno 5 argumentos " onclick="Nota(1,2,3,4,9);"/></br>
-    
-    <input type="button" value="Exercicio [4] Data Por extenso " onclick="extenso();"/></br>
+
     
     
-    </p>
+<div class="camada1" >
+    <h1><span class="bola">2</span></h1>
+<div class="camada" > 
+    <div class="txt" onclick="window.location.href='card.html'">Exercicio CARD rotacionar</div>
+    <img onclick="window.location.href='card.html'" src="img/card.png" width="100" height="100"></img>
+    </div> </div>
+
+
+<div class="camada1" >
+    <h1><span class="bola">3</span></h1>
+<div class="camada" > 
+   
+    <div class="txt" onclick="Nota(1,2,3,4);">Exercicio notas aluno 4 argumentos </div>
     
-      <input type="button" value="Exercicio Curriculum "  onclick="window.location.href='curriculum.html'"/></br>
-     <input type="button" value="Exercicio CARD rotacionar "  onclick="window.location.href='card.html'"/></br>
-     <input type="button" value="Exercicio Eventos [click e teclado]"  onclick="window.location.href='eventos.html'"/></br>
-     </br>
-     </br>
-     <input type="button" value="Exercicio Mapa"  onclick="window.location.href='mapa/mapa.html'"/></br>
-     <input type="button" value="Exercicio Canvas Caneta"  onclick="window.location.href='canvas/caneta.html'"/></br>
-     <input type="button" value="Exercicio Canvas filtro"  onclick="window.location.href='canvas/filtro.html'"/></br>
+    <img onclick="Nota(1,2,3,4);" src="img/notas.jpg" width="100" height="100" ></img>
+    </div>
+    </div>
+
+
+
+<div class="camada1" >
+    <h1><span class="bola">3</span></h1>
+<div class="camada" > 
+    <div class="txt" onclick="Nota(1,2,3,4);">Exercicio notas aluno 5 argumentos </div>
+    <img onclick="Nota(1,2,3,4,9);" src="img/notas.jpg" width="100" height="100"></img>
+    </div> </div>
+
+
+
     
-</form>
-</form>
+<div class="camada1" >
+    <h1><span class="bola">4</span></h1>
+<div class="camada" > 
+    <div class="txt" onclick="extenso();">Exercicio Data Por extenso </div>
+    <img onclick="extenso();" src="img/data.jpg" width="100" height="100"></img>
+    </div> </div>
+
+    
+    
+    
+
+
+
+<div class="camada1" >
+    <h1><span class="bola">5</span></h1>
+<div class="camada" > 
+    
+    <div class="txt" onclick="calculadora(prompt('',''),prompt('',''));">Exercicio calculadora </div>
+    
+    <img onclick="calculadora(prompt('',''),prompt('',''));" src="img/calculadora.png" width="100" height="100"></img>
+    </div>
+ </div>    
+    
+<div class="camada1" >
+    <h1><span class="bola">6</span></h1>
+<div class="camada" > 
+    <div class="txt" onclick="window.location.href='eventos.html'">Exercicio Eventos [click e teclado]</div>
+    <img onclick="window.location.href='eventos.html'" src="img/eventos.png" width="100" height="100"></img>
+    </div> </div>
+
+    
+    
+<div class="camada1" >
+    <h1><span class="bola">7</span></h1>
+<div class="camada" > 
+    <div class="txt" onclick="window.location.href='mapa/mapa.html'">Exercicio Mapa</div>
+    <img onclick="window.location.href='mapa/mapa.html'" src="img/mapa.jpg" width="100" height="100"></img>
+    </div> </div>
+
+    
+    
+<div class="camada1" >
+    <h1><span class="bola">8</span></h1>
+<div class="camada" > 
+    <div class="txt" onclick="window.location.href='canvas/caneta.html'">Exercicio Canvas Caneta</div>
+    <img onclick="window.location.href='canvas/caneta.html'" src="img/canvas.jpg" width="100" height="100"></img>
+    </div> </div>
+
+    
+    
+    
+    
+    
+<div class="camada1" >
+    <h1><span class="bola">8</span></h1>
+<div class="camada" > 
+    <div class="txt" onclick="window.location.href='canvas/filtro.html'">Exercicio Canvas filtro</div>
+    <img onclick="window.location.href='canvas/filtro.html'" src="img/canvas.jpg" width="100" height="100"></img>
+    </div>
+ </div>
+
 
 
 </html>
